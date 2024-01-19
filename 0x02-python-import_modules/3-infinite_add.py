@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-import sys
-if __name__ == '__main__':
-    sys.argv.pop(0)
-    total = 0
-    for number in sys.argv:
-        total += int(number)
-    print("{}".format(total))
+if __name__ == "__main__":
+    import sys
+    argv = sys.argv
+    argv = argv[1:]
+    result = 0
+    for n in argv:
+        result += int(n)
+    print("{}".format(result))
